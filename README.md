@@ -8,6 +8,7 @@
 
 <p align="center">
     <img src="figures/overview.png" type="image/jpg"/>
+
 <p>
 
 ## Table of contents
@@ -21,6 +22,7 @@
   - [Data Processing](#Data-Processing)
   - [Training](#Training)
 - [Citation](#Citation)
+- [License](#License)
 - [Acknowledgement](#Acknowledgement)
 
 ## Introduction
@@ -45,9 +47,16 @@ Annoy-DataSync is a novel approach that transforms code-based reasoning patterns
 
 Due to our collaborators' compliance requirements, we only release the PythonEdu-Rs subset of the Annoy(++) dataset.
 
+#### License
+
+The released Annoy datasets are derived from [SmolLM-Corpus](https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus), whose `python-edu` subset is sourced from [The Stack v2](https://huggingface.co/datasets/bigcode/the-stack-v2-train-full-ids). Therefore, the released datasets are **not** covered by a single permissive license such as MIT or Apache. The source code files collected in The Stack v2 come from many repositories with their own licenses, and use of the datasets must abide by those original source licenses, including any attribution or non-commercial terms that apply to individual files.
+
+For the Annoy processing artifacts and synthetic/transformed fields that we authors contribute, we release them under [OpenRAIL-M](https://www.licenses.ai/license/open-rail-m) for non-commercial research use only, with the standard OpenRAIL-M use restrictions and attribution requirements. This does not override the licenses of the underlying source code files. If you redistribute or use the datasets commercially, you must first verify the license status of the underlying source material and obtain any required rights from the original copyright holders.
+
 
 
 #### Models
+
 <table>
     <tr>
         <th rowspan="2">Base Model / Training</th>
@@ -62,25 +71,50 @@ Due to our collaborators' compliance requirements, we only release the PythonEdu
     </tr>
     <tr>
         <td>Qwen 2.5 7B Coder</td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/qwen2.5-7b-coder_spec_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/qwen2.5-7b-coder_spec">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/qwen2.5-7b-coder_spec_pp_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/qwen2.5-7b-coder_spec_pp">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/qwen2.5-7b-coder_spec_stage1">🤗</a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/qwen2.5-7b-coder_spec">🤗</a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/qwen2.5-7b-coder_spec_pp_stage1">🤗</a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/qwen2.5-7b-coder_spec_pp">🤗</a>
+        </td>
     </tr>
     <tr>
         <td>LLaMA 3.1 8B</td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/llama3.1-8b_spec_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/llama3.1-8b_spec">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/llama3.1-8b_spec_pp_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/llama3.1-8b_spec_pp">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/llama3.1-8b_spec_stage1">🤗</a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/llama3.1-8b_spec">🤗</a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/llama3.1-8b_spec_pp_stage1">🤗</a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/llama3.1-8b_spec_pp">🤗</a>
+        </td>
     </tr>
     <tr>
         <td>DeepSeek v2 Lite Coder</td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/dsv2-lite-coder_spec_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/dsv2-lite-coder_spec">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/dsv2-lite-coder_spec_pp_stage1">🤗</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/ASCXZ12EWDX/dsv2-lite-coder_spec_pp">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/dsv2-lite-coder_spec_stage1">🤗</a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/dsv2-lite-coder_spec">🤗</a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/dsv2-lite-coder_spec_pp_stage1">🤗</a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+        <a href="https://huggingface.co/ASCXZ12EWDX/dsv2-lite-coder_spec_pp">🤗</a>
+        </td>
     </tr>
+
 </table>
 
 
@@ -213,4 +247,4 @@ By doing so, you can get data `data/spec_demo_final.jsonl` with the same format 
 You can use any popular training framework to train your model like [llama-factory](https://github.com/hiyouga/LLaMA-Factory). 
 
 ## Acknowledgement
-We thank Koala NN, TCLV and OMEN for their valuable feedback and suggestions! 🤗🤗🤗
+We thank Koala NN, TCLV and OMEN for their valuable feedback and suggestions! 🤝🤝🤝
